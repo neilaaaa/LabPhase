@@ -28,6 +28,7 @@ body {
   width: 100%; /* S'assure que le menu s'étend sur toute la largeur */
   z-index: 1000; /* Pour que le menu reste au-dessus du contenu */
   align-items: center;
+  border-radius: 10px;
 }
 
 ul {
@@ -171,3 +172,10 @@ ul li a{
 h1{
   font-size: 30px;
 }
+.textinheader{
+  text-align: center;
+  padding: 20px ;
+  margin-top: 100px;
+  line-height: 40px;
+}
+

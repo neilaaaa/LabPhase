@@ -1,10 +1,18 @@
 body {
-  height: 10000px; /* Simule un contenu long pour scroller */
+  height: 1000px; 
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   align-items: center;
 }
-
+.nav{
+  display: flex;
+  justify-content: space-between;
+  text-align:center;
+}
+.image4{
+  width: 150px;
+  height: 150px;
+}
 #navbar {
   display: flex;
   flex: 2;
@@ -13,11 +21,14 @@ body {
   position: sticky;
   top: 0; /* Définit la position "sticky" */
   padding: 10px;
-  background-color: #91230d; /* Couleur de fond contrastante */
+  background-color: #8976b1; /* Couleur de fond contrastante */
+  background: linear-gradient(45deg, #b9a39f, #5c3aa7);
   color: #fff; /* Couleur de texte claire */
   font-size: 20px;
   width: 100%; /* S'assure que le menu s'étend sur toute la largeur */
   z-index: 1000; /* Pour que le menu reste au-dessus du contenu */
+  align-items: center;
+  border-radius: 10px;
 }
 
 ul {
@@ -28,6 +39,11 @@ ul {
 
 li {
   list-style: none;
+}
+ul li a{
+  text-decoration: none;
+  color: white;
+  padding-right: 10px;
 }
 h1{
   margin: 40px;
