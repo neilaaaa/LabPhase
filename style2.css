@@ -1,0 +1,45 @@
+body {
+  height: 10000px; /* Simule un contenu long pour scroller */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  align-items: center;
+}
+
+#navbar {
+  display: flex;
+  flex: 2;
+  justify-content: space-between;
+  list-style: none;
+  position: sticky;
+  top: 0; /* Définit la position "sticky" */
+  padding: 10px;
+  background-color: #91230d; /* Couleur de fond contrastante */
+  color: #fff; /* Couleur de texte claire */
+  font-size: 20px;
+  width: 100%; /* S'assure que le menu s'étend sur toute la largeur */
+  z-index: 1000; /* Pour que le menu reste au-dessus du contenu */
+}
+
+ul {
+  margin-left: 70px;
+  display: flex;
+  gap: 50px;
+}
+
+li {
+  list-style: none;
+}
+h1{
+  margin: 40px;
+  text-align: center;
+  font-size: 40px;
+}
+h1:hover{
+  color: #91230d;
+}
+p{
+  font-size: 28px;
+  text-align: center;
+  margin: 20px;
+  color: rgb(93, 92, 92);
+}

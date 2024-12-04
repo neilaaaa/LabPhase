@@ -1,0 +1,169 @@
+body {
+  height: 10000px; 
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  align-items: center;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  text-align:center;
+}
+.image4{
+  width: 150px;
+  height: 150px;
+}
+#navbar {
+  display: flex;
+  flex: 2;
+  justify-content: space-between;
+  list-style: none;
+  position: sticky;
+  top: 0; /* Définit la position "sticky" */
+  padding: 10px;
+  background-color: #8976b1; /* Couleur de fond contrastante */
+  background: linear-gradient(45deg, #b9a39f, #5c3aa7);
+  color: #fff; /* Couleur de texte claire */
+  font-size: 20px;
+  width: 100%; /* S'assure que le menu s'étend sur toute la largeur */
+  z-index: 1000; /* Pour que le menu reste au-dessus du contenu */
+  align-items: center;
+}
+
+ul {
+  margin-left: 70px;
+  display: flex;
+  gap: 50px;
+}
+
+li {
+  list-style: none;
+}
+
+.first-part{
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+ 
+}
+.image{
+  margin-top: 70px;
+  width:500px; 
+  height: auto;
+}
+.text{
+  display: grid;
+  row-gap: 2px;
+  align-items: center;
+  font-size: 40px;
+  margin-left: 50px;
+  padding-right: 150;
+  margin-top: 70px;
+  color: #b9a39f;
+}
+.optimiser{
+  font-size: 50px;
+}
+.text2{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 70px;
+}
+.the-flex-part{
+  margin-left: 210px;
+  display: grid;
+  column-gap: 20px;
+  row-gap: 10px;
+  grid-template-columns: 400px 400px;
+  text-align: center;
+}
+.tarifs, .delais, .unique, .disponibilite{
+  font-size: 18px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgb(209, 209, 208);
+  padding: 10px;
+  background-color: rgb(253, 247, 247);
+}
+.tarifs:hover, .delais:hover, .unique:hover, .disponibilite:hover{
+  background-color: rgb(249, 237, 236);
+}
+.image2{
+  width: 200px;
+}
+.Creation{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  border-style: solid;
+  border-radius: 10px;
+  padding-left: 0px;
+  padding-right: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+}
+.Creation:hover{
+  box-shadow: 60px 60px 60px rgba(0,0, 0, 0.04);
+  border-color: grey;
+}
+.positif{
+  display: inline;
+  font-size: 19px;
+}
+.positif li::before{
+  content: '✔'; /* Insère une coche */
+  margin-right: 10px; /* Espace entre la coche et le texte */
+  font-size: 20px;
+}
+.section2{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-left: 50px ;
+  margin-right: 50px;
+}
+.image3{
+  height: 200px;
+}
+.Service{
+  margin-top: 160px;
+}
+.button{
+  border: none;
+  background-color: #fff;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #b9a39f;
+}
+.contact-part{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px;
+  margin-top: 130px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: rgb(137, 128, 128);
+  padding: 20px;
+
+}
+.Contact{
+  border-radius: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 20px;
+  cursor: pointer;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 1px;
+  background-color: #b9a39f;
+  color: white;
+}
+h1{
+  font-size: 30px;
+}
