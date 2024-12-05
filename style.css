@@ -15,7 +15,7 @@ body {
 }
 #navbar {
   display: flex;
-  flex: 2;
+  flex: 1;
   justify-content: space-between;
   list-style: none;
   position: sticky;
@@ -52,6 +52,7 @@ ul li a{
  
 }
 .image{
+  flex: 1;
   margin-top: 70px;
   width:500px; 
   height: auto;
@@ -81,6 +82,13 @@ ul li a{
   row-gap: 10px;
   grid-template-columns: 400px 400px;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .the-flex-part {
+    margin-left: 0;
+    grid-template-columns: 1fr; /* Un seul élément par ligne */
+    align-items: center;
+  }
 }
 .tarifs, .delais, .unique, .disponibilite{
   font-size: 18px;
@@ -178,4 +186,53 @@ h1{
   margin-top: 100px;
   line-height: 40px;
 }
+@media screen and (max-width: 768px) {
+  ul {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne s'il n'y a pas assez de place */
+    justify-content: space-evenly; /* Équilibre l'espacement des éléments */
+  }
+
+  ul li {
+    flex: 1 1 100%; /* Chaque élément prend 100% de la largeur */
+    text-align: center; /* Centrer les éléments */
+    margin: 5px 0;
+  }
+
+  .navbar {
+    padding: 10px 20px; /* Ajuste la marge pour les petits écrans */
+  }
+}
+@media screen and (max-width: 600px) {
+  .text {
+    font-size: 30px;
+    margin-left: 20px;
+    padding-right: 20px;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .section2 {
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .image3 {
+    height: 150px;
+  }
+
+  .button {
+    font-size: 18px;
+  }
+
+  .contact-part {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 
